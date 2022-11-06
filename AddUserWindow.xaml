@@ -1,0 +1,53 @@
+﻿<Window x:Class="CrudExample.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudExample"
+        mc:Ignorable="d"
+        Title="AddUserWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+
+            <TextBlock Margin="5"
+                       Text="Name"
+                       />
+            <TextBox Name="NameBox"
+                     Margin="5"
+                     Width="100"
+                     Height="20"
+                     Text="{Binding Name}"
+                     />
+            <TextBlock 
+                       Text="Age"
+                Margin="5"
+                       />
+            <TextBox Name="AgeBox"
+                     Margin="5"
+                     Width="100"
+                     Height="20"
+                     Text="{Binding Age}"
+                     />
+
+            <Button Name="SaveButton1"
+                    Margin="5"
+                    Width="100"
+                    Height="20"
+                    Content="Сохранитиь"
+                    Background="Green"
+                    Foreground="White"
+                    Click="SaveButton"/>
+
+
+
+
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>
